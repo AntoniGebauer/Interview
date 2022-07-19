@@ -34,7 +34,7 @@ struct ContentView: View {
 
                     }
                 }
-            }
+            }.navigationTitle(model.currentModule?.name ?? "")
             .accentColor(.black)
             .padding()
         }

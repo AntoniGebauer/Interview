@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "retina_1708x683_staging.toptal.net_qa_how-to-write-testable-code-and-why-it-matters-25bff356169b7ee5f878b7b591b84afa.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

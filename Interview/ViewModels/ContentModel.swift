@@ -25,7 +25,7 @@ class ContentModel: ObservableObject {
     var currentDetailIndex = 0
     
     init() {
-        // TODO: fix issue with getRemoteData method as it is not getting into dataTask
+        // TODO: fix the issue with getRemoteData method as it is not getting into dataTask
         getLocalData()
     }
     

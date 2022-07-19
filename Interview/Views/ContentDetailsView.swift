@@ -10,9 +10,26 @@ import SwiftUI
 struct ContentDetailsView: View {
     
     @EnvironmentObject var model: ContentModel
-
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader { geo in
+            
+            VStack (spacing: 20){
+                
+                Image(systemName: model.currentDetail?.image ?? "")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: geo.size.width * 0.4, height: geo.size.height * 0.3, alignment: .center)
+                
+                Text(model.currentDetail?.name ?? "")
+                    .bold()
+                    .font(.largeTitle)
+                
+                Text(model.currentDetail?.description ?? "")
+                    .font(.title)
+            }.navigationTitle("Details")
+            .padding()
+        }
     }
 }
 

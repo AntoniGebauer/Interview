@@ -11,6 +11,7 @@ struct Details: Decodable, Identifiable {
     
     var id:Int
     var name:String
+    var image:String
     var description:String
     
 }

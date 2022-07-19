@@ -14,7 +14,7 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             VStack (alignment: .leading) {
-                Text("Interview")
+                Text("Antoni Gebauer")
                     .padding(.leading, 20)
                 
                 ScrollView {
@@ -42,7 +42,7 @@ struct HomeView: View {
                     .accentColor(.black)
                     .padding()
                 }
-            }.navigationTitle("Antoni Gebauer")
+            }.navigationTitle("Interview App")
 
         }
         .navigationViewStyle(.stack) // fix for a bug which was causing NavigationView to jump back

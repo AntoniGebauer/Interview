@@ -16,7 +16,7 @@ struct ContentViewRow: View {
         if model.currentModule != nil && index < model.currentModule!.content.details.count {
             return model.currentModule!.content.details[index]
         } else {
-            return Details(id: 0, name: "", description: "")
+            return Details(id: 0, name: "", image: "", description: "")
         }
     }
     

@@ -12,8 +12,15 @@ class ContentModel: ObservableObject {
     // List of modules
     @Published var modules = [Module]()
     
+    // Current module
+    @Published var currentModule: Module?
+    var currentModuleIndex = 0
+    
+    // Current content selected
+    @Published var currentContentSelected:Int?
+    
     init() {
-        getRemoteData()
+        getLocalData()
     }
     
     // MARK: Data Methods
@@ -57,7 +64,6 @@ class ContentModel: ObservableObject {
             }
             catch {
                 // Couldn't parse json
-                print("Couldn't parse JSON")
             }
         }
         
@@ -65,4 +71,48 @@ class ContentModel: ObservableObject {
         dataTask.resume()
         
     }
+    
+    func getLocalData() {
+        
+        // Get a url to the json file
+        let jsonUrl = Bundle.main.url(forResource: "data", withExtension: "json")
+        
+        do {
+            // Read the file into a data object
+            let jsonData = try Data(contentsOf: jsonUrl!)
+            
+            // Try to decode the json into an array of modules
+            let jsonDecoder = JSONDecoder()
+            let modules = try jsonDecoder.decode([Module].self, from: jsonData)
+            
+            // Assign parsed modules to modules property
+            self.modules = modules
+        }
+        catch {
+            // TODO log error
+            print("Couldn't parse local data")
+        }
+        
+        
+    }
+    
+    // MARK: Module navigation methods
+    
+    func beginModule(_ moduleid:Int) {
+        
+        // Find the index for this module id
+        for index in 0..<modules.count {
+            
+            if modules[index].id == moduleid {
+            
+                // Found the matching module
+                currentModuleIndex = index
+                break
+            }
+        }
+        
+        // Set the current module
+        currentModule = modules[currentModuleIndex]
+    }
+    
 }

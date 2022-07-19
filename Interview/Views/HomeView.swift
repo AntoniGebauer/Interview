@@ -8,9 +8,41 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @EnvironmentObject var model:ContentModel
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack (alignment: .leading) {
+                Text("Interview")
+                    .padding(.leading, 20)
+                
+                ScrollView {
+                    LazyVStack {
+                        ForEach (model.modules) { module in
+                            
+                            VStack (spacing: 20) {
+                                
+                                NavigationLink(
+                                    destination:
+                                        ContentView()
+                                            .onAppear(perform: {
+                                                model.beginModule(module.id)
+                                            }),
+                                    tag: module.id,
+                                    selection: $model.currentContentSelected) {
+                                    
+                                        HomeViewRow(image: module.content.image, title: module.name, description: module.content.description)
+                                        
+                                    }
+                            }
+                        }
+                    }
+                    .accentColor(.black)
+                    .padding()
+                }
+            }
+        }
     }
 }
 

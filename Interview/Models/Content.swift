@@ -10,6 +10,7 @@ import Foundation
 struct Content: Decodable, Identifiable {
     
     var id:Int
+    var description:String
     var image:String
     var details:[Details]
     

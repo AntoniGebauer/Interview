@@ -17,6 +17,7 @@
 		C92A722D2886E0CD0007510E /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92A722C2886E0CD0007510E /* Details.swift */; };
 		C92A722F2886E5410007510E /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92A722E2886E5410007510E /* ContentModel.swift */; };
 		C942159B2886EC3800EAD217 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C942159A2886EC3700EAD217 /* HomeViewRow.swift */; };
+		C942159D2886EED400EAD217 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C942159C2886EED400EAD217 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		C92A722C2886E0CD0007510E /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
 		C92A722E2886E5410007510E /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		C942159A2886EC3700EAD217 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
+		C942159C2886EED400EAD217 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			children = (
 				C92A72152886D71C0007510E /* HomeView.swift */,
 				C942159A2886EC3700EAD217 /* HomeViewRow.swift */,
+				C942159C2886EED400EAD217 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			files = (
 				C942159B2886EC3800EAD217 /* HomeViewRow.swift in Sources */,
 				C92A72162886D71C0007510E /* HomeView.swift in Sources */,
+				C942159D2886EED400EAD217 /* ContentView.swift in Sources */,
 				C92A722D2886E0CD0007510E /* Details.swift in Sources */,
 				C92A72142886D71C0007510E /* InterviewApp.swift in Sources */,
 				C92A72272886DBB10007510E /* Module.swift in Sources */,

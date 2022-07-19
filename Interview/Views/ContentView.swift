@@ -8,8 +8,36 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var model: ContentModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        ScrollView {
+            LazyVStack {
+                
+                // Confirm that currentModule is set
+                if model.currentModule != nil {
+
+
+                
+                    ForEach(0..<model.currentModule!.content.details.count) { index in
+                        NavigationLink(
+                            destination:
+                                ContentDetailsView()
+                                    .onAppear(perform: {
+                                        model.showDetail(index)
+                                    }),
+                            label: {
+                                ContentViewRow(index: index)
+                            })
+
+                    }
+                }
+            }
+            .accentColor(.black)
+            .padding()
+        }
     }
 }
 

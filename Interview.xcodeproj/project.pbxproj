@@ -18,6 +18,8 @@
 		C92A722F2886E5410007510E /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92A722E2886E5410007510E /* ContentModel.swift */; };
 		C942159B2886EC3800EAD217 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C942159A2886EC3700EAD217 /* HomeViewRow.swift */; };
 		C942159D2886EED400EAD217 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C942159C2886EED400EAD217 /* ContentView.swift */; };
+		C9A59CDE2886FB0300B9C81A /* ContentDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A59CDD2886FB0300B9C81A /* ContentDetailsView.swift */; };
+		C9A59CE02886FB2B00B9C81A /* ContentViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A59CDF2886FB2B00B9C81A /* ContentViewRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		C92A722E2886E5410007510E /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		C942159A2886EC3700EAD217 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
 		C942159C2886EED400EAD217 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C9A59CDD2886FB0300B9C81A /* ContentDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailsView.swift; sourceTree = "<group>"; };
+		C9A59CDF2886FB2B00B9C81A /* ContentViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				C92A72152886D71C0007510E /* HomeView.swift */,
 				C942159A2886EC3700EAD217 /* HomeViewRow.swift */,
 				C942159C2886EED400EAD217 /* ContentView.swift */,
+				C9A59CDF2886FB2B00B9C81A /* ContentViewRow.swift */,
+				C9A59CDD2886FB0300B9C81A /* ContentDetailsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +197,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A59CDE2886FB0300B9C81A /* ContentDetailsView.swift in Sources */,
+				C9A59CE02886FB2B00B9C81A /* ContentViewRow.swift in Sources */,
 				C942159B2886EC3800EAD217 /* HomeViewRow.swift in Sources */,
 				C92A72162886D71C0007510E /* HomeView.swift in Sources */,
 				C942159D2886EED400EAD217 /* ContentView.swift in Sources */,

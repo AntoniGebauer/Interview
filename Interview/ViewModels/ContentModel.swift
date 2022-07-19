@@ -18,8 +18,14 @@ class ContentModel: ObservableObject {
     
     // Current content selected
     @Published var currentContentSelected:Int?
+    var currentContentIndex = 0
+
+    // Current detail
+    @Published var currentDetail: Details?
+    var currentDetailIndex = 0
     
     init() {
+        // TODO: fix issue with getRemoteData method as it is not getting into dataTask
         getLocalData()
     }
     
@@ -113,6 +119,19 @@ class ContentModel: ObservableObject {
         
         // Set the current module
         currentModule = modules[currentModuleIndex]
+    }
+    
+    func showDetail(_ detailIndex:Int) {
+        
+        if detailIndex < currentModule!.content.details.count {
+            currentDetailIndex = detailIndex
+        }
+        else {
+            currentDetailIndex = 0
+        }
+        
+        // Set the current detail
+        currentDetail = currentModule!.content.details[currentDetailIndex]
     }
     
 }

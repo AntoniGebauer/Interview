@@ -26,21 +26,29 @@ struct HomeView: View {
                                 NavigationLink(
                                     destination:
                                         ContentView()
-                                            .onAppear(perform: {
-                                                model.beginModule(module.id)
-                                            }),
+                                        .onAppear(perform: {
+                                            model.beginModule(module.id)
+                                        }),
                                     tag: module.id,
                                     selection: $model.currentContentSelected) {
-                                    
+                                        
                                         HomeViewRow(image: module.content.image, title: module.name, description: module.content.description)
                                         
                                     }
                             }
                         }
+                        Spacer()
                     }
                     .accentColor(.black)
                     .padding()
                 }
+            }.navigationTitle("Antoni Gebauer")
+
+        }
+        .navigationViewStyle(.stack) // fix for a bug which was causing NavigationView to jump back
+        .onChange(of: model.currentContentSelected) { changedVaule in // fix for a bug which was causing index out of range error in ContentViewRow
+            if changedVaule == nil {
+                model.currentModule = nil
             }
         }
     }

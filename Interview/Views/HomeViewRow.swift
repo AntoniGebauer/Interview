@@ -32,7 +32,7 @@ struct HomeViewRow: View {
                 Spacer()
                 
                 // Text
-                VStack (alignment: .center, spacing: 10) {
+                VStack (alignment: .leading, spacing: 10) {
                     
                     // Headline
                     Text(title)
@@ -41,6 +41,7 @@ struct HomeViewRow: View {
                     // Description
                     Text(description)
                         .font(.system(size: 12))
+                        .multilineTextAlignment(.leading)
                         .padding(.bottom, 20)
                         
                     

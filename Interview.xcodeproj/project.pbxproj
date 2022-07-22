@@ -20,6 +20,7 @@
 		C942159D2886EED400EAD217 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C942159C2886EED400EAD217 /* ContentView.swift */; };
 		C9A59CDE2886FB0300B9C81A /* ContentDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A59CDD2886FB0300B9C81A /* ContentDetailsView.swift */; };
 		C9A59CE02886FB2B00B9C81A /* ContentViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A59CDF2886FB2B00B9C81A /* ContentViewRow.swift */; };
+		C9A59CE228874C3600B9C81A /* JustifiedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A59CE128874C3600B9C81A /* JustifiedText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		C942159C2886EED400EAD217 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C9A59CDD2886FB0300B9C81A /* ContentDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailsView.swift; sourceTree = "<group>"; };
 		C9A59CDF2886FB2B00B9C81A /* ContentViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewRow.swift; sourceTree = "<group>"; };
+		C9A59CE128874C3600B9C81A /* JustifiedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustifiedText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				C942159C2886EED400EAD217 /* ContentView.swift */,
 				C9A59CDF2886FB2B00B9C81A /* ContentViewRow.swift */,
 				C9A59CDD2886FB0300B9C81A /* ContentDetailsView.swift */,
+				C9A59CE128874C3600B9C81A /* JustifiedText.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				C9A59CDE2886FB0300B9C81A /* ContentDetailsView.swift in Sources */,
 				C9A59CE02886FB2B00B9C81A /* ContentViewRow.swift in Sources */,
 				C942159B2886EC3800EAD217 /* HomeViewRow.swift in Sources */,
+				C9A59CE228874C3600B9C81A /* JustifiedText.swift in Sources */,
 				C92A72162886D71C0007510E /* HomeView.swift in Sources */,
 				C942159D2886EED400EAD217 /* ContentView.swift in Sources */,
 				C92A722D2886E0CD0007510E /* Details.swift in Sources */,

@@ -1,0 +1,149 @@
+[
+    {
+        "id" : 0,
+        "name" : "SOLID",
+        "content" : {
+            "id" : 0,
+            "description" : "Acronym for the first five object-oriented design (OOD) principles by Robert C. Martin (also known as Uncle Bob)",
+            "image" : "solid",
+            "details" : [
+                {
+                    "id" : 0,
+                    "name" : "Single - Responsibility Principle",
+                    "image" : "1.circle.fill",
+                    "description" : "There should never be more than one reason for a class to change. In other words, every class should have only one responsibility."
+                },
+                {
+                    "id" : 1,
+                    "name" : "Open - Closed Principle",
+                    "image" : "book.closed.circle.fill",
+                    "description" : "Software entities ... should be open for extension, but closed for modification."
+                },
+                {
+                    "id" : 2,
+                    "name" : "Liskov Substitution Principle",
+                    "image" : "arrow.left.arrow.right.circle.fill",
+                    "description" : "Functions that use pointers or references to base classes must be able to use objects of derived classes without knowing it."
+                },
+                {
+                    "id" : 3,
+                    "name" : "Interface Segregation Principle",
+                    "image" : "doc.circle.fill",
+                    "description" : "Many client-specific interfaces are better than one general-purpose interface."
+                },
+                {
+                    "id" : 4,
+                    "name" : "Dependency Inversion Principle",
+                    "image" : "questionmark.circle.fill",
+                    "description" : "Depend upon abstractions, [not] concretions."
+                }
+            ]
+        }
+    },
+    {
+        "id" : 1,
+        "name" : "MVVM",
+        "content" : {
+            "id" : 0,
+            "description" : "Software design pattern that is structured to separate program logic and user interface controls created by Ken Cooper and John Gossman.",
+            "image" : "mvvm",
+            "details" : [
+                {
+                    "id" : 0,
+                    "name" : "Model",
+                    "image" : "terminal.fill",
+                    "description" : "Houses the logic for the program, which is retrieved by the ViewModel upon its own receipt of input from the user through View."
+                },
+                {
+                    "id" : 1,
+                    "name" : "View",
+                    "image" : "rectangle.split.3x3.fill",
+                    "description" : "Collection of visible elements, which also receives user input. This includes user interfaces (UI), animations and text. The content of View is not interacted with directly to change what is presented"
+                },
+                {
+                    "id" : 2,
+                    "name" : "ViewModel",
+                    "image" : "arrow.triangle.merge",
+                    "description" : "Located between the View and Model layers. This is where the controls for interacting with View are housed, while binding is used to connect the UI elements in View to the controls in ViewModel."
+                }
+            ]
+        }
+            
+    },
+    {
+        "id" : 2,
+        "name" : "Unit Testing",
+        "content" : {
+            "id" : 0,
+            "description" : "A unit test is a way of testing a unit - the smallest piece of code that can be logically isolated in a system. In most programming languages, that is a function, a subroutine, a method or property.",
+            "image" : "unittesting",
+            "details" : [
+                {
+                    "id" : 0,
+                    "name" : "Manual",
+                    "image" : "hand.draw.fill",
+                    "description" : "Manual testing will reveal problems from the point-of-view of users. You will have the ability to find out what errors can be encountered by entities not familiar with the underlying code and structure, as well as if there are problems with regards to the usability of your program."
+                },
+                {
+                    "id" : 1,
+                    "name" : "Automated",
+                    "image" : "gearshape.fill",
+                    "description" : "Automated unit tests will allow your developers to code tests that automatically validate code according to their understanding of the specifications. Since they are automated they can be run over and over again with little or no variation each time."
+                }
+            ]
+        }
+    },
+    {
+        "id" : 3,
+        "name" : "Clean Code",
+        "content" : {
+            "id" : 0,
+            "description" : "The most popular definition of clean code is code that is easy to understand and easy to change.",
+            "image" : "cleancode",
+            "details" : [
+                {
+                    "id" : 0,
+                    "name" : "Name your variables meaningfully",
+                    "image" : "rectangle.and.pencil.and.ellipsis",
+                    "description" : "Provide your variables & functions(including arguments, parameters, and argument labels) with meaningful and readable names (close to English as possible) so as not to require additional documentation to add clarity and meaning."
+                },
+                {
+                    "id" : 1,
+                    "name" : "Name your functions meaningfully",
+                    "image" : "rectangle.and.pencil.and.ellipsis",
+                    "description" : "Ask yourself questions before you name a function: What it does? What it needs in order to work? What’s the outcome?"
+                },
+                {
+                    "id" : 2,
+                    "name" : "Use longer names for variables",
+                    "image" : "hand.draw.fill",
+                    "description" : "When the scope is narrow, we can make exceptions for not providing a longer and more descriptive variable name since the code is isolated and short and can be quickly understood just by a cursory glance. If the code inside a for loop is large and spanning a wider scope, then it makes more sense to have a longer more descriptive variable name."
+                },
+                {
+                    "id" : 3,
+                    "name" : "Use pronounceable and distinct names",
+                    "image" : "rectangle.and.pencil.and.ellipsis",
+                    "description" : "Wrong names can lead to a wrong property being used in the code and could contribute to hard to debug issues. Also, using non-pronounceable names can make it harder to remember them and cause difficulty when discussing the code with your peers."
+                },
+                {
+                    "id" : 4,
+                    "name" : "Split large methods/functions",
+                    "image" : "square.split.diagonal",
+                    "description" : "Firstly, smaller functions are usually easier to read and understand. Secondly, invoking a bunch of smaller functions inside another can be self-documenting(if the function names are chosen properly) and help in avoiding inline comments. Thirdly having smaller functions can help in promoting code reuse."
+                },
+                {
+                    "id" : 5,
+                    "name" : "Refactor your code",
+                    "image" : "clock.arrow.circlepath",
+                    "description" : "The repercussions of having the bad code can come back to haunt us, especially in cases where the application needs new enhancements or a bug that needs to be quickly fixed. This, in turn, can lead to adding code on top of existing bad code, which can make the code more fragile to maintain in the future."
+                },
+                {
+                    "id" : 6,
+                    "name" : "Unit test coverage",
+                    "image" : "testtube.2",
+                    "description" : "Every project goes through an inevitable phase where code changes are required. Code changes could be related to a bug fix or it could be due to some API changes in another part of your application or external system. If you plan on keeping your code current and updated, you have to ensure that any change that you make to the code(refactoring included) isn’t breaking any functionality that was previously working."
+                }
+            ]
+        }
+    }
+]

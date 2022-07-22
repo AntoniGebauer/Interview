@@ -18,8 +18,6 @@ struct ContentView: View {
                 
                 // Confirm that currentModule is set
                 if model.currentModule != nil {
-
-
                 
                     ForEach(0..<model.currentModule!.content.details.count) { index in
                         NavigationLink(

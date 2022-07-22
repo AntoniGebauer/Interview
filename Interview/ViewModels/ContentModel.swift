@@ -70,6 +70,7 @@ class ContentModel: ObservableObject {
             }
             catch {
                 // Couldn't parse json
+                print("Couldn't parse JSON Data")
             }
         }
         

@@ -25,8 +25,12 @@ struct ContentDetailsView: View {
                     .bold()
                     .font(.largeTitle)
                 
-                Text(model.currentDetail?.description ?? "")
-                    .font(.title)
+                ScrollView {
+                    Text(model.currentDetail?.description ?? "")
+                        .font(.title)
+                }
+                
+                
             }.navigationTitle("Details")
             .padding()
         }

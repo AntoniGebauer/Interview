@@ -25,8 +25,7 @@ class ContentModel: ObservableObject {
     var currentDetailIndex = 0
     
     init() {
-        // TODO: fix the issue with getRemoteData method as it is not getting into dataTask
-        getLocalData()
+        getRemoteData()
     }
     
     // MARK: Data Methods
@@ -50,7 +49,7 @@ class ContentModel: ObservableObject {
         // Get the session and kick off the task
         let session = URLSession.shared
         
-        let dataTask = session.dataTask(with: request) { (data, response, error) in
+        session.dataTask(with: request) { (data, response, error) in
             
             // Check if there's an error
             guard error == nil else {
@@ -72,10 +71,7 @@ class ContentModel: ObservableObject {
                 // Couldn't parse json
                 print("Couldn't parse JSON Data")
             }
-        }
-        
-        // Kick off data task
-        dataTask.resume()
+        }.resume()
         
     }
     
